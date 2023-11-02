@@ -1,0 +1,313 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date             : Tue Oct 31 09:33:31 2023
+| Host             : DESKTOP-T0RQS2O running 64-bit major release  (build 9200)
+| Command          : report_power -file board_top_power_routed.rpt -pb board_top_power_summary_routed.pb -rpx board_top_power_routed.rpx
+| Design           : board_top
+| Device           : xcku11p-ffve1517-1-i
+| Design State     : routed
+| Grade            : industrial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 6.524        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 5.673        |
+| Device Static (W)        | 0.852        |
+| Effective TJA (C/W)      | 0.8          |
+| Max Ambient (C)          | 94.6         |
+| Junction Temperature (C) | 30.4         |
+| Confidence Level         | Medium       |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.134 |       63 |       --- |             --- |
+| CLB Logic                |     0.043 |    81692 |       --- |             --- |
+|   LUT as Logic           |     0.035 |    25101 |    298560 |            8.41 |
+|   Register               |     0.004 |    38752 |    597120 |            6.49 |
+|   LUT as Distributed RAM |     0.002 |     1396 |    148320 |            0.94 |
+|   LUT as Shift Register  |     0.002 |     1422 |    148320 |            0.96 |
+|   CARRY8                 |    <0.001 |      547 |     37320 |            1.47 |
+|   BUFG                   |    <0.001 |        6 |        64 |            9.38 |
+|   Others                 |     0.000 |     3146 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |      877 |    298560 |            0.29 |
+| Signals                  |     0.042 |    58562 |       --- |             --- |
+| Block RAM                |     0.020 |     38.5 |       600 |            6.42 |
+| MMCM                     |     0.097 |        0 |       --- |             --- |
+| PLL                      |     0.052 |        1 |       --- |             --- |
+| DSPs                     |    <0.001 |        3 |      2928 |            0.10 |
+| I/O                      |     0.043 |       32 |       512 |            6.25 |
+| GTH                      |     5.241 |       32 |        32 |          100.00 |
+| Static Power             |     0.852 |          |           |                 |
+| Total                    |     6.524 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint     |       0.850 |     1.142 |       0.906 |      0.236 |       NA    | Unspecified | NA         |
+| Vccint_io  |       0.850 |     0.074 |       0.002 |      0.072 |       NA    | Unspecified | NA         |
+| Vccbram    |       0.850 |     0.006 |       0.003 |      0.003 |       NA    | Unspecified | NA         |
+| Vccaux     |       1.800 |     0.299 |       0.082 |      0.217 |       NA    | Unspecified | NA         |
+| Vccaux_io  |       1.800 |     0.064 |       0.009 |      0.055 |       NA    | Unspecified | NA         |
+| Vcco33     |       3.300 |     0.007 |       0.000 |      0.007 |       NA    | Unspecified | NA         |
+| Vcco25     |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18     |       1.800 |     0.014 |       0.014 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15     |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135    |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12     |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10     |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc     |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
+| MGTAVcc    |       0.900 |     1.134 |       1.115 |      0.019 |       NA    | Unspecified | NA         |
+| MGTAVtt    |       1.200 |     2.978 |       2.941 |      0.037 |       NA    | Unspecified | NA         |
+| MGTVccaux  |       1.800 |     0.098 |       0.098 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYAVcc   |       0.900 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                               | Action                                                                                                     |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                      |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                |                                                                                                            |
+| I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                          |                                                                                                            |
+|                             |            |                                                       |                                                                                                            |
+| Overall confidence level    | Medium     |                                                       |                                                                                                            |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 0.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 1.2                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                               | Domain                                                                                                                                                                                                                            | Constraint (ns) |
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| CPU_block/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK                                             | CPU_block/mdm_1/U0/Use_E2.BSCAN_I/DRCK                                                                                                                                                                                            |            33.3 |
+| CPU_block/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE                                           | CPU_block/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0                                                                                                                                                                                    |            66.7 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[0]                                                                        | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[0].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[0]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[0]_1                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[1].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[0]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[0]_2                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[2].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[0]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[0]_3                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[3].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[0]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[0]_4                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[0]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[0]_5                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[5].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[0]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[0]_6                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[6].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[0]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[0]_7                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[7].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[0]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[1]                                                                        | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[0].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[1]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[1]_1                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[1].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[1]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[1]_2                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[2].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[1]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[1]_3                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[3].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[1]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[1]_4                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[1]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[1]_5                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[5].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[1]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[1]_6                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[6].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[1]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[1]_7                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[7].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[1]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[2]                                                                        | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[0].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[2]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[2]_1                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[1].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[2]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[2]_2                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[2].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[2]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[2]_3                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[3].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[2]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[2]_4                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[2]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[2]_5                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[5].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[2]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[2]_6                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[6].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[2]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[2]_7                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[7].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[2]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[3]                                                                        | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[0].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[3]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[3]_1                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[1].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[3]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[3]_2                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[2].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[3]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[3]_3                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[3].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[3]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[3]_4                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[3]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[3]_5                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[5].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[3]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[3]_6                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[6].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[3]   |            11.2 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[3]_7                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[7].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[3]   |            11.2 |
+| clk_out1_CPU_block_clk_wiz_0_0                                                                      | CPU_block/clk_wiz_0/inst/clk_out1_CPU_block_clk_wiz_0_0                                                                                                                                                                           |            13.5 |
+| clk_out1_CPU_block_clk_wiz_1_1                                                                      | CPU_block/clk_wiz_1/inst/clk_out1_CPU_block_clk_wiz_1_1                                                                                                                                                                           |            10.0 |
+| clk_out1_clk_wiz_0                                                                                  | clk_wiz_0/inst/clk_out1_clk_wiz_0                                                                                                                                                                                                 |            13.5 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/DRCK                                                                                                                                                                |            50.0 |
+| freerun                                                                                             | FPGA_50MHz                                                                                                                                                                                                                        |            20.0 |
+| gtwiz_userclk_rx_srcclk_out[0]                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[1].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/gtwiz_userclk_rx_srcclk_out[0] |            11.2 |
+| gtwiz_userclk_rx_srcclk_out[0]                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_usrclk2_out[0]             |            11.2 |
+| gtwiz_userclk_tx_srcclk_out[0]                                                                      | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[1].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/gtwiz_userclk_tx_srcclk_out[0] |            11.2 |
+| mgtrefclk0_226_p                                                                                    | mgtrefclk0_226_p                                                                                                                                                                                                                  |             6.7 |
+| mgtrefclk0_230_p                                                                                    | mgtrefclk0_230_p                                                                                                                                                                                                                  |             6.7 |
+| qpll0outclk_out[0]                                                                                  | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[0].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outclk_out[0]      |             0.1 |
+| qpll0outclk_out[0]_1                                                                                | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[1].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outclk_out[0]      |             0.1 |
+| qpll0outclk_out[0]_2                                                                                | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[2].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outclk_out[0]      |             0.1 |
+| qpll0outclk_out[0]_3                                                                                | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[3].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outclk_out[0]      |             0.1 |
+| qpll0outclk_out[0]_4                                                                                | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[4].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outclk_out[0]      |             0.1 |
+| qpll0outclk_out[0]_5                                                                                | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[5].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outclk_out[0]      |             0.1 |
+| qpll0outclk_out[0]_6                                                                                | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[6].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outclk_out[0]      |             0.1 |
+| qpll0outclk_out[0]_7                                                                                | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[7].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outclk_out[0]      |             0.1 |
+| qpll0outrefclk_out[0]                                                                               | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[0].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]   |             6.7 |
+| qpll0outrefclk_out[0]_1                                                                             | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[1].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]   |             6.7 |
+| qpll0outrefclk_out[0]_2                                                                             | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[2].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]   |             6.7 |
+| qpll0outrefclk_out[0]_3                                                                             | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[3].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]   |             6.7 |
+| qpll0outrefclk_out[0]_4                                                                             | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[4].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]   |             6.7 |
+| qpll0outrefclk_out[0]_5                                                                             | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[5].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]   |             6.7 |
+| qpll0outrefclk_out[0]_6                                                                             | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[6].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]   |             6.7 |
+| qpll0outrefclk_out[0]_7                                                                             | vx1_phy/VID_4K_144.vx1_phy_144/inst/gen_gtwizard_gthe4_top.vx1_phy_144_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[7].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]   |             6.7 |
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------------+-----------+
+| Name                              | Power (W) |
++-----------------------------------+-----------+
+| board_top                         |     5.673 |
+|   CPU_block                       |     0.111 |
+|     clk_wiz_1                     |     0.097 |
+|       inst                        |     0.097 |
+|     microblaze_0                  |     0.010 |
+|       U0                          |     0.010 |
+|     microblaze_0_local_memory     |     0.001 |
+|       lmb_bram                    |     0.001 |
+|   clk_wiz_0                       |     0.052 |
+|     inst                          |     0.052 |
+|   dbg_hub                         |     0.002 |
+|     inst                          |     0.002 |
+|       BSCANID.u_xsdbm_id          |     0.002 |
+|   pll_refclk                      |     0.024 |
+|   pll_spi                         |     0.008 |
+|   vx1_debug                       |     0.050 |
+|     vx1_vid_ila                   |     0.046 |
+|       inst                        |     0.046 |
+|   vx1_link                        |     0.144 |
+|     vx1_rx_align_buff             |     0.013 |
+|     vx1_rx_link                   |     0.075 |
+|       r_loop[0].Vbyone_Rx_Link_i  |     0.003 |
+|       r_loop[10].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[11].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[12].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[13].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[14].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[15].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[16].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[17].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[18].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[19].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[1].Vbyone_Rx_Link_i  |     0.003 |
+|       r_loop[20].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[21].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[22].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[23].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[24].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[25].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[26].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[27].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[28].Vbyone_Rx_Link_i |     0.002 |
+|       r_loop[29].Vbyone_Rx_Link_i |     0.003 |
+|       r_loop[2].Vbyone_Rx_Link_i  |     0.002 |
+|       r_loop[30].Vbyone_Rx_Link_i |     0.003 |
+|       r_loop[31].Vbyone_Rx_Link_i |     0.003 |
+|       r_loop[3].Vbyone_Rx_Link_i  |     0.002 |
+|       r_loop[4].Vbyone_Rx_Link_i  |     0.002 |
+|       r_loop[5].Vbyone_Rx_Link_i  |     0.002 |
+|       r_loop[6].Vbyone_Rx_Link_i  |     0.002 |
+|       r_loop[7].Vbyone_Rx_Link_i  |     0.002 |
+|       r_loop[8].Vbyone_Rx_Link_i  |     0.002 |
+|       r_loop[9].Vbyone_Rx_Link_i  |     0.002 |
+|     vx1_tx_align_buff             |     0.015 |
+|     vx1_tx_link                   |     0.041 |
+|       t_loop[0].Vbyone_Tx_Link_i  |     0.001 |
+|       t_loop[10].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[11].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[12].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[13].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[14].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[15].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[16].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[17].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[18].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[19].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[1].Vbyone_Tx_Link_i  |     0.001 |
+|       t_loop[20].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[21].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[22].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[23].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[24].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[25].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[26].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[27].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[28].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[29].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[2].Vbyone_Tx_Link_i  |     0.001 |
+|       t_loop[30].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[31].Vbyone_Tx_Link_i |     0.001 |
+|       t_loop[3].Vbyone_Tx_Link_i  |     0.001 |
+|       t_loop[4].Vbyone_Tx_Link_i  |     0.001 |
+|       t_loop[5].Vbyone_Tx_Link_i  |     0.001 |
+|       t_loop[6].Vbyone_Tx_Link_i  |     0.001 |
+|       t_loop[7].Vbyone_Tx_Link_i  |     0.001 |
+|       t_loop[8].Vbyone_Tx_Link_i  |     0.001 |
+|       t_loop[9].Vbyone_Tx_Link_i  |     0.001 |
+|   vx1_phy                         |     5.268 |
+|     VID_4K_144.vx1_phy_144        |     5.257 |
+|       inst                        |     5.257 |
+|     vx1_phy_refclk                |     0.011 |
+|   vx1_vio                         |     0.003 |
+|     inst                          |     0.003 |
+|       PROBE_IN_INST               |     0.002 |
++-----------------------------------+-----------+
+
+

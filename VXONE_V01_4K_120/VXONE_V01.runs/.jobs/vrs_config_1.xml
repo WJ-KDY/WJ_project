@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="vx1_vid_ila_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/vx1_vid_ila_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_rst_clk_wiz_1_100M_0_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_rst_clk_wiz_1_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_axi_amm_bridge_0_0_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_axi_amm_bridge_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_axi_uartlite_0_0_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_clk_wiz_1_1_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_clk_wiz_1_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_xbar_0_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_axi_intc_0_0_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_axi_intc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_microblaze_0_2_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_microblaze_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_mdm_1_1_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_mdm_1_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_lmb_bram_1_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_lmb_bram_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_dlmb_v10_1_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_dlmb_v10_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="rx_fifo_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/rx_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vx1_phy_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/vx1_phy_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_wiz_0_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vx1_vio_0_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/vx1_vio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_ilmb_v10_1_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_ilmb_v10_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="CPU_block_dlmb_v10_1_synth_1"/>
+	</Run>
+	<Run Id="CPU_block_dlmb_bram_if_cntlr_1_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_dlmb_bram_if_cntlr_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_block_ilmb_bram_if_cntlr_1_synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/CPU_block_ilmb_bram_if_cntlr_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="vx1_vid_ila_synth_1"/>
+		<Parent Id="CPU_block_rst_clk_wiz_1_100M_0_synth_1"/>
+		<Parent Id="CPU_block_axi_amm_bridge_0_0_synth_1"/>
+		<Parent Id="CPU_block_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="CPU_block_clk_wiz_1_1_synth_1"/>
+		<Parent Id="CPU_block_xbar_0_synth_1"/>
+		<Parent Id="CPU_block_axi_intc_0_0_synth_1"/>
+		<Parent Id="CPU_block_clk_wiz_0_0_synth_1"/>
+		<Parent Id="CPU_block_microblaze_0_2_synth_1"/>
+		<Parent Id="CPU_block_mdm_1_1_synth_1"/>
+		<Parent Id="CPU_block_lmb_bram_1_synth_1"/>
+		<Parent Id="CPU_block_dlmb_v10_1_synth_1"/>
+		<Parent Id="rx_fifo_synth_1"/>
+		<Parent Id="vx1_phy_synth_1"/>
+		<Parent Id="clk_wiz_0_synth_1"/>
+		<Parent Id="vx1_vio_0_synth_1"/>
+		<Parent Id="CPU_block_ilmb_v10_1_synth_1"/>
+		<Parent Id="CPU_block_dlmb_bram_if_cntlr_1_synth_1"/>
+		<Parent Id="CPU_block_ilmb_bram_if_cntlr_1_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="vx1_vid_ila_synth_1"/>
+		<Parent Id="CPU_block_rst_clk_wiz_1_100M_0_synth_1"/>
+		<Parent Id="CPU_block_axi_amm_bridge_0_0_synth_1"/>
+		<Parent Id="CPU_block_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="CPU_block_clk_wiz_1_1_synth_1"/>
+		<Parent Id="CPU_block_xbar_0_synth_1"/>
+		<Parent Id="CPU_block_axi_intc_0_0_synth_1"/>
+		<Parent Id="CPU_block_clk_wiz_0_0_synth_1"/>
+		<Parent Id="CPU_block_microblaze_0_2_synth_1"/>
+		<Parent Id="CPU_block_mdm_1_1_synth_1"/>
+		<Parent Id="CPU_block_lmb_bram_1_synth_1"/>
+		<Parent Id="CPU_block_dlmb_v10_1_synth_1"/>
+		<Parent Id="rx_fifo_synth_1"/>
+		<Parent Id="vx1_phy_synth_1"/>
+		<Parent Id="clk_wiz_0_synth_1"/>
+		<Parent Id="vx1_vio_0_synth_1"/>
+		<Parent Id="CPU_block_ilmb_v10_1_synth_1"/>
+		<Parent Id="CPU_block_dlmb_bram_if_cntlr_1_synth_1"/>
+		<Parent Id="CPU_block_ilmb_bram_if_cntlr_1_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

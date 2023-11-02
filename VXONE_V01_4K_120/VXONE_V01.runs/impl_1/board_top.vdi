@@ -1,0 +1,1576 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Oct 27 15:26:45 2023
+# Process ID: 133580
+# Current directory: C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1
+# Command line: vivado.exe -log board_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source board_top.tcl -notrace
+# Log file: C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/board_top.vdi
+# Journal file: C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1\vivado.jou
+# Running On: DESKTOP-T0RQS2O, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 16, Host memory: 34118 MB
+#-----------------------------------------------------------
+source board_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/oem/Desktop/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: /mnt/d/mob/WorkBackUp/vxone/FPGA/VXONE_V01/VXONE_V01.srcs/sources_1/imports/Debug/mb_0.elf
+WARNING: [Project 1-1694] ELF association failed for file /mnt/d/mob/WorkBackUp/vxone/FPGA/VXONE_V01/VXONE_V01.srcs/sources_1/imports/Debug/mb_0.elf in design CPU_block. File is not accessible
+Command: link_design -top board_top -part xcku11p-ffve1517-1-i
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcku11p-ffve1517-1-i
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/.Xil/Vivado-133580-DESKTOP-T0RQS2O/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/.Xil/Vivado-133580-DESKTOP-T0RQS2O/vx1_vio_0/vx1_vio_0.dcp' for cell 'vx1_vio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_amm_bridge_0_0/CPU_block_axi_amm_bridge_0_0.dcp' for cell 'CPU_block/axi_amm_bridge_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_intc_0_0/CPU_block_axi_intc_0_0.dcp' for cell 'CPU_block/axi_intc_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_uartlite_0_0/CPU_block_axi_uartlite_0_0.dcp' for cell 'CPU_block/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_0_0/CPU_block_clk_wiz_0_0.dcp' for cell 'CPU_block/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_1_1/CPU_block_clk_wiz_1_1.dcp' for cell 'CPU_block/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_mdm_1_1/CPU_block_mdm_1_1.dcp' for cell 'CPU_block/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_microblaze_0_2/CPU_block_microblaze_0_2.dcp' for cell 'CPU_block/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_rst_clk_wiz_1_100M_0/CPU_block_rst_clk_wiz_1_100M_0.dcp' for cell 'CPU_block/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_xbar_0/CPU_block_xbar_0.dcp' for cell 'CPU_block/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_dlmb_bram_if_cntlr_1/CPU_block_dlmb_bram_if_cntlr_1.dcp' for cell 'CPU_block/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_dlmb_v10_1/CPU_block_dlmb_v10_1.dcp' for cell 'CPU_block/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_ilmb_bram_if_cntlr_1/CPU_block_ilmb_bram_if_cntlr_1.dcp' for cell 'CPU_block/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_ilmb_v10_1/CPU_block_ilmb_v10_1.dcp' for cell 'CPU_block/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_lmb_bram_1/CPU_block_lmb_bram_1.dcp' for cell 'CPU_block/microblaze_0_local_memory/lmb_bram'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/.Xil/Vivado-133580-DESKTOP-T0RQS2O/vx1_vid_ila/vx1_vid_ila.dcp' for cell 'vx1_debug/vx1_vid_ila'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/.Xil/Vivado-133580-DESKTOP-T0RQS2O/rx_fifo/rx_fifo.dcp' for cell 'vx1_link/vx1_rx_align_buff/buff[0].rx_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/.Xil/Vivado-133580-DESKTOP-T0RQS2O/vx1_phy/vx1_phy.dcp' for cell 'vx1_phy/VID_8K_OR_4K_120.vx1_phy'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2415.129 ; gain = 11.809
+INFO: [Netlist 29-17] Analyzing 2486 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. clk_wiz_0/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Chipscope 16-324] Core: vx1_debug/vx1_vid_ila UUID: 7d2e6518-27e1-5218-9542-2040b80e10cf 
+INFO: [Chipscope 16-324] Core: vx1_vio UUID: 6dca6ef7-236f-5103-bc4d-e9fab1330a54 
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_1_1/CPU_block_clk_wiz_1_1_board.xdc] for cell 'CPU_block/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_1_1/CPU_block_clk_wiz_1_1_board.xdc] for cell 'CPU_block/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_1_1/CPU_block_clk_wiz_1_1.xdc] for cell 'CPU_block/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_1_1/CPU_block_clk_wiz_1_1.xdc] for cell 'CPU_block/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_rst_clk_wiz_1_100M_0/CPU_block_rst_clk_wiz_1_100M_0_board.xdc] for cell 'CPU_block/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_rst_clk_wiz_1_100M_0/CPU_block_rst_clk_wiz_1_100M_0_board.xdc] for cell 'CPU_block/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_rst_clk_wiz_1_100M_0/CPU_block_rst_clk_wiz_1_100M_0.xdc] for cell 'CPU_block/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_rst_clk_wiz_1_100M_0/CPU_block_rst_clk_wiz_1_100M_0.xdc] for cell 'CPU_block/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_intc_0_0/CPU_block_axi_intc_0_0.xdc] for cell 'CPU_block/axi_intc_0/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_intc_0_0/CPU_block_axi_intc_0_0.xdc] for cell 'CPU_block/axi_intc_0/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_amm_bridge_0_0/CPU_block_axi_amm_bridge_0_0.xdc] for cell 'CPU_block/axi_amm_bridge_0/inst'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_amm_bridge_0_0/CPU_block_axi_amm_bridge_0_0.xdc] for cell 'CPU_block/axi_amm_bridge_0/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_0_0/CPU_block_clk_wiz_0_0_board.xdc] for cell 'CPU_block/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_0_0/CPU_block_clk_wiz_0_0_board.xdc] for cell 'CPU_block/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_0_0/CPU_block_clk_wiz_0_0.xdc] for cell 'CPU_block/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_0_0/CPU_block_clk_wiz_0_0.xdc] for cell 'CPU_block/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_microblaze_0_2/CPU_block_microblaze_0_2.xdc] for cell 'CPU_block/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_microblaze_0_2/CPU_block_microblaze_0_2.xdc] for cell 'CPU_block/microblaze_0/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_uartlite_0_0/CPU_block_axi_uartlite_0_0_board.xdc] for cell 'CPU_block/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_uartlite_0_0/CPU_block_axi_uartlite_0_0_board.xdc] for cell 'CPU_block/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_uartlite_0_0/CPU_block_axi_uartlite_0_0.xdc] for cell 'CPU_block/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_uartlite_0_0/CPU_block_axi_uartlite_0_0.xdc] for cell 'CPU_block/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/vx1_vid_ila/ila_v6_2/constraints/ila_impl.xdc] for cell 'vx1_debug/vx1_vid_ila/inst'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/vx1_vid_ila/ila_v6_2/constraints/ila_impl.xdc] for cell 'vx1_debug/vx1_vid_ila/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/vx1_vid_ila/ila_v6_2/constraints/ila.xdc] for cell 'vx1_debug/vx1_vid_ila/inst'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/vx1_vid_ila/ila_v6_2/constraints/ila.xdc] for cell 'vx1_debug/vx1_vid_ila/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[0].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[0].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[10].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[10].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[11].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[11].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[12].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[12].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[13].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[13].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[14].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[14].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[15].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[15].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[16].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[16].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[17].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[17].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[18].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[18].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[19].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[19].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[1].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[1].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[20].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[20].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[21].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[21].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[22].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[22].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[23].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[23].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[24].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[24].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[25].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[25].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[26].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[26].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[27].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[27].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[28].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[28].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[29].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[29].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[2].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[2].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[30].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[30].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[31].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[31].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[3].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[3].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[4].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[4].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[5].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[5].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[6].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[6].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[7].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[7].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[8].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[8].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[9].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[9].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[0].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[0].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[10].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[10].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[11].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[11].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[12].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[12].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[13].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[13].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[14].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[14].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[15].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[15].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[16].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[16].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[17].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[17].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[18].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[18].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[19].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[19].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[1].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[1].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[20].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[20].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[21].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[21].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[22].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[22].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[23].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[23].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[24].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[24].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[25].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[25].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[26].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[26].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[27].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[27].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[28].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[28].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[29].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[29].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[2].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[2].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[30].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[30].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[31].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[31].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[3].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[3].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[4].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[4].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[5].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[5].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[6].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[6].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[7].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[7].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[8].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[8].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[9].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[9].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/vx1_phy/synth/vx1_phy.xdc] for cell 'vx1_phy/VID_8K_OR_4K_120.vx1_phy/inst'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/vx1_phy/synth/vx1_phy.xdc] for cell 'vx1_phy/VID_8K_OR_4K_120.vx1_phy/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3531.773 ; gain = 458.977
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/vx1_vio_0/vx1_vio_0.xdc] for cell 'vx1_vio'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/vx1_vio_0/vx1_vio_0.xdc] for cell 'vx1_vio'
+Parsing XDC File [C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/constrs_1/imports/xdc/pin.xdc]
+Finished Parsing XDC File [C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/constrs_1/imports/xdc/pin.xdc]
+Parsing XDC File [C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/constrs_1/imports/xdc/us_vbone_phy_top.xdc]
+Finished Parsing XDC File [C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/constrs_1/imports/xdc/us_vbone_phy_top.xdc]
+Parsing XDC File [C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/constrs_1/imports/xdc/config.xdc]
+Finished Parsing XDC File [C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/constrs_1/imports/xdc/config.xdc]
+Parsing XDC File [C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/constrs_1/imports/xdc/timing.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/constrs_1/imports/xdc/timing.xdc:3]
+Finished Parsing XDC File [C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/constrs_1/imports/xdc/timing.xdc]
+Parsing XDC File [C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/constrs_1/new/debug.xdc]
+Finished Parsing XDC File [C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/constrs_1/new/debug.xdc]
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_mdm_1_1/CPU_block_mdm_1_1.xdc] for cell 'CPU_block/mdm_1/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_mdm_1_1/CPU_block_mdm_1_1.xdc] for cell 'CPU_block/mdm_1/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_1_1/CPU_block_clk_wiz_1_1_late.xdc] for cell 'CPU_block/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_1_1/CPU_block_clk_wiz_1_1_late.xdc] for cell 'CPU_block/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_intc_0_0/CPU_block_axi_intc_0_0_clocks.xdc] for cell 'CPU_block/axi_intc_0/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_axi_intc_0_0/CPU_block_axi_intc_0_0_clocks.xdc] for cell 'CPU_block/axi_intc_0/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_0_0/CPU_block_clk_wiz_0_0_late.xdc] for cell 'CPU_block/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.gen/sources_1/bd/CPU_block/ip/CPU_block_clk_wiz_0_0/CPU_block_clk_wiz_0_0_late.xdc] for cell 'CPU_block/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[0].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[0].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[10].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[10].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[11].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[11].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[12].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[12].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[13].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[13].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[14].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[14].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[15].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[15].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[16].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[16].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[17].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[17].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[18].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[18].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[19].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[19].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[1].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[1].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[20].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[20].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[21].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[21].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[22].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[22].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[23].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[23].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[24].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[24].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[25].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[25].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[26].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[26].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[27].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[27].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[28].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[28].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[29].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[29].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[2].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[2].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[30].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[30].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[31].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[31].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[3].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[3].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[4].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[4].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[5].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[5].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[6].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[6].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[7].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[7].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[8].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[8].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[9].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_rx_align_buff/buff[9].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[0].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[0].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[10].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[10].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[11].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[11].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[12].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[12].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[13].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[13].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[14].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[14].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[15].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[15].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[16].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[16].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[17].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[17].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[18].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[18].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[19].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[19].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[1].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[1].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[20].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[20].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[21].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[21].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[22].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[22].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[23].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[23].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[24].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[24].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[25].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[25].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[26].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[26].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[27].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[27].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[28].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[28].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[29].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[29].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[2].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[2].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[30].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[30].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[31].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[31].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[3].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[3].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[4].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[4].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[5].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[5].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[6].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[6].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[7].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[7].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[8].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[8].rx_fifo/U0'
+Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[9].rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/ip/rx_fifo/rx_fifo_clocks.xdc] for cell 'vx1_link/vx1_tx_align_buff/buff[9].rx_fifo/U0'
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[0].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[10].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[11].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[12].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[13].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[14].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[15].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[16].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[17].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[18].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[19].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[1].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[20].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[21].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[22].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[23].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[24].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[25].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[26].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[27].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[28].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[29].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[2].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[30].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[31].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[3].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[4].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[5].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[6].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[7].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[8].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[9].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[0].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[10].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[11].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[12].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[13].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[14].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[15].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[16].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[17].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[18].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[19].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[1].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[20].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[21].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[22].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[23].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[24].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[25].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[26].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[27].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[28].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[29].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[2].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[30].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[31].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[3].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[4].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[5].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[6].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[7].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[8].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: vx1_link/vx1_rx_align_buff/buff[9].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Project 1-1714] 386 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell CPU_block/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell CPU_block/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell CPU_block/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell CPU_block/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Generating merged BMM file for the design top 'board_top'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/imports/Debug/mb_0.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 3570.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1065 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 648 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 7 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 145 instances
+  OBUFDS => OBUFDS: 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 64 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 132 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 64 instances
+
+39 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:01:12 . Memory (MB): peak = 3570.902 ; gain = 2470.887
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku11p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku11p'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3570.902 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1216d0d5b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 3570.902 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 3949.516 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: ffa6047e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:01:45 . Memory (MB): peak = 3949.516 ; gain = 19.875
+
+Phase 2 Retarget
+INFO: [Opt 31-1287] Pulled Inverter CPU_block/axi_interconnect_0/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_ready_d[2]_i_2 into driver instance CPU_block/axi_interconnect_0/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_ready_d[2]_i_4, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter CPU_block/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/Use_BSCAN.FDC_I/Use_Serial_Unified_Completion.Completion_Status_Register.sample_1[15]_i_1 into driver instance CPU_block/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/Use_BSCAN.FDC_I/Use_Serial_Unified_Completion.Completion_Status_Register.sample_1[15]_i_2, which resulted in an inversion of 14 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[0].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[0].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[0].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[0].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[10].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[10].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[10].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[10].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[11].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[11].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[11].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[11].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[12].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[12].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[12].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[12].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[13].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[13].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[13].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[13].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[14].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[14].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[14].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[14].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[15].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[15].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[15].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[15].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[16].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[16].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[16].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[16].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[17].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[17].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[17].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[17].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[18].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[18].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[18].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[18].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[19].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[19].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[19].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[19].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[1].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[1].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[1].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[1].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[20].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[20].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[20].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[20].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[21].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[21].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[21].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[21].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[22].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[22].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[22].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[22].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[23].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[23].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[23].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[23].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[24].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[24].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[24].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[24].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[25].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[25].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[25].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[25].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[26].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[26].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[26].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[26].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[27].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[27].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[27].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[27].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[28].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[28].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[28].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[28].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[29].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[29].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[29].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[29].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[2].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[2].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[2].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[2].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[30].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[30].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[30].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[30].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[31].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[31].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[31].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[31].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[3].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[3].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[3].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[3].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[4].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[4].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[4].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[4].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[5].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[5].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[5].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[5].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[6].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[6].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[6].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[6].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[7].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[7].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[7].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[7].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[8].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[8].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[8].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[8].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[9].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[9].Vbyone_Rx_Link_i/Rxphycon/reach_reinit_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter vx1_link/vx1_rx_link/r_loop[9].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_1 into driver instance vx1_link/vx1_rx_link/r_loop[9].Vbyone_Rx_Link_i/Rxphycon/reach_stable_cnt_inferred_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-138] Pushed 149 inverter(s) to 3307 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: fd022f99
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:01:50 . Memory (MB): peak = 3949.516 ; gain = 19.875
+INFO: [Opt 31-389] Phase Retarget created 909 cells and removed 4697 cells
+INFO: [Opt 31-1021] In phase Retarget, 582 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 64 inverter(s) to 512 load pin(s).
+Phase 3 Constant propagation | Checksum: 1636b22af
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:01:51 . Memory (MB): peak = 3949.516 ; gain = 19.875
+INFO: [Opt 31-389] Phase Constant propagation created 2156 cells and removed 2747 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 649 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 12f4953a2
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:01:55 . Memory (MB): peak = 3949.516 ; gain = 19.875
+INFO: [Opt 31-389] Phase Sweep created 8 cells and removed 2759 cells
+INFO: [Opt 31-1021] In phase Sweep, 3670 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG CPU_block/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst to drive 42 load(s) on clock net CPU_block/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFGCE
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 5 BUFG optimization | Checksum: 9ef52a5b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:01:55 . Memory (MB): peak = 3949.516 ; gain = 19.875
+INFO: [Opt 31-662] Phase BUFG optimization created 3 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: 9ef52a5b
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:01:56 . Memory (MB): peak = 3949.516 ; gain = 19.875
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: daecb072
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:01:56 . Memory (MB): peak = 3949.516 ; gain = 19.875
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 691 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             909  |            4697  |                                            582  |
+|  Constant propagation         |            2156  |            2747  |                                            649  |
+|  Sweep                        |               8  |            2759  |                                           3670  |
+|  BUFG optimization            |               3  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            691  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 3949.516 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1309d9da4
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:02:12 . Memory (MB): peak = 3949.516 ; gain = 19.875
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 36 BRAM(s) out of a total of 40 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 36 newly gated: 0 Total Ports: 80
+Ending PowerOpt Patch Enables Task | Checksum: 10472a4a8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.481 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 10472a4a8
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 5337.500 ; gain = 1387.984
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 10472a4a8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.050 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 9f0ebe23
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.075 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+139 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:50 ; elapsed = 00:02:57 . Memory (MB): peak = 5337.500 ; gain = 1766.598
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.296 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/board_top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file board_top_drc_opted.rpt -pb board_top_drc_opted.pb -rpx board_top_drc_opted.rpx
+Command: report_drc -file board_top_drc_opted.rpt -pb board_top_drc_opted.pb -rpx board_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/board_top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku11p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku11p'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 5a3c1186
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 181c5fb79
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 23a0bec70
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 23a0bec70
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 23a0bec70
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1e6f66fd5
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 121d1288e
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:38 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 121d1288e
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 190785dac
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 190785dac
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 2.1.1 Partition Driven Placement | Checksum: 190785dac
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 2.1 Floorplanning | Checksum: 181688c93
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 181688c93
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 181688c93
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 12730a9d2
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:01:17 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 4534 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 2084 nets or LUTs. Breaked 0 LUT, combined 2084 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-712] Optimization is not feasible on net vid_rx_hs[10] due to MARK_DEBUG attribute.
+INFO: [Physopt 32-1030] Pass 1. Identified 17 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 9 nets.  Re-placed 208 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 9 nets or cells. Created 0 new cell, deleted 1 existing cell and moved 208 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.201 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [Physopt 32-1132] Very high fanout net 'vx1_debug/vx1_vid_ila/inst/ila_core_inst/u_ila_regs/MU_SRL[3].mu_srl_reg/shift_en_o' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 1041 to 530 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 530.
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |           2084  |                  2084  |           0  |           1  |  00:00:02  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              1  |                     9  |           1  |           1  |  00:00:02  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |           2085  |                  2093  |           1  |           5  |  00:00:04  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 11a4b92d0
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:01:24 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 1c49f125d
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:01:26 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1c49f125d
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:01:26 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 29714a50c
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:01:30 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1d8f60fdc
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:34 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 272478a9b
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 2639e714e
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:37 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: 26e71323f
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:47 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 3.3.3 Slice Area Swap | Checksum: 26e71323f
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:48 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 3.3 Small Shape DP | Checksum: 268e5bb14
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:55 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1e8ef883d
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:59 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 19eee2dba
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:59 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 19eee2dba
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:02:00 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 2037cb316
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=6.416 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 243717354
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [Place 46-35] Processed net CPU_block/rst_clk_wiz_1_100M/U0/peripheral_aresetn[0], inserted BUFG to drive 2332 loads.
+INFO: [Place 46-45] Replicated bufg driver CPU_block/rst_clk_wiz_1_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_replica
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 16fd528b8
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1e22d3244
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:02:21 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=6.416. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 16ccb8859
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 16ccb8859
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:02:22 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 24052b6bc
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:02:30 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                2x2|                4x4|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                2x2|                4x4|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                2x2|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 24052b6bc
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:02:30 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 24052b6bc
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:02:30 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:02:31 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1e74cd85a
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:02:31 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Ending Placer Task | Checksum: 189de7b7d
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:02:31 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+182 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:45 ; elapsed = 00:02:35 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/board_top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file board_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.205 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file board_top_utilization_placed.rpt -pb board_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file board_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku11p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku11p'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+191 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 5337.500 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/board_top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku11p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku11p'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: f8163a9 ConstDB: 0 ShapeSum: a6d5e971 RouteDB: d3872e63
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 5337.500 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 668f4f NumContArr: ba010d5 Constraints: e60a93e4 Timing: 0
+Phase 1 Build RT Design | Checksum: f2113408
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: f2113408
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: f2113408
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 5337.500 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 858058ce
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 27f145313
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 5426.305 ; gain = 88.805
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.497  | TNS=0.000  | WHS=-0.259 | THS=-105.414|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1e22f084c
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 5426.305 ; gain = 88.805
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.497  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 2ce9ebc52
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0153315 %
+  Global Horizontal Routing Utilization  = 0.00288246 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 58573
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 52591
+  Number of Partially Routed Nets     = 5982
+  Number of Node Overlaps             = 3
+
+Phase 2 Router Initialization | Checksum: 227c35f01
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 227c35f01
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 5426.305 ; gain = 88.805
+Phase 3 Initial Routing | Checksum: 243fd0016
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:01:07 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 8573
+ Number of Nodes with overlaps = 974
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.493  | TNS=0.000  | WHS=-0.910 | THS=-5.218 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 177ae01e3
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:51 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.493  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 11ba52ea5
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:54 . Memory (MB): peak = 5426.305 ; gain = 88.805
+Phase 4 Rip-up And Reroute | Checksum: 11ba52ea5
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:54 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 113b0b897
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:54 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 113b0b897
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:55 . Memory (MB): peak = 5426.305 ; gain = 88.805
+Phase 5 Delay and Skew Optimization | Checksum: 113b0b897
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:55 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 153d48ae7
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:02:02 . Memory (MB): peak = 5426.305 ; gain = 88.805
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.493  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1cbc24346
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:02:02 . Memory (MB): peak = 5426.305 ; gain = 88.805
+Phase 6 Post Hold Fix | Checksum: 1cbc24346
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:02:03 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 3.77888 %
+  Global Horizontal Routing Utilization  = 2.38667 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1468882c5
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:02:03 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1468882c5
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:02:04 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin vx1_phy/VID_8K_OR_4K_120.vx1_phy/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[0].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/gthe4_common_gen.GTHE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTHE4_COMMON_X0Y0/COM0_REFCLKOUT5
+INFO: [Route 35-467] Router swapped GT pin vx1_phy/VID_8K_OR_4K_120.vx1_phy/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[1].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/gthe4_common_gen.GTHE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTHE4_COMMON_X0Y1/COM0_REFCLKOUT5
+INFO: [Route 35-467] Router swapped GT pin vx1_phy/VID_8K_OR_4K_120.vx1_phy/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[2].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/gthe4_common_gen.GTHE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTHE4_COMMON_X0Y2/COM0_REFCLKOUT1
+INFO: [Route 35-467] Router swapped GT pin vx1_phy/VID_8K_OR_4K_120.vx1_phy/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[3].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/gthe4_common_gen.GTHE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTHE4_COMMON_X0Y3/COM0_REFCLKOUT3
+INFO: [Route 35-467] Router swapped GT pin vx1_phy/VID_8K_OR_4K_120.vx1_phy/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[4].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/gthe4_common_gen.GTHE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTHE4_COMMON_X0Y4/COM0_REFCLKOUT5
+INFO: [Route 35-467] Router swapped GT pin vx1_phy/VID_8K_OR_4K_120.vx1_phy/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[5].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/gthe4_common_gen.GTHE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTHE4_COMMON_X0Y5/COM0_REFCLKOUT5
+INFO: [Route 35-467] Router swapped GT pin vx1_phy/VID_8K_OR_4K_120.vx1_phy/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[6].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/gthe4_common_gen.GTHE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTHE4_COMMON_X0Y6/COM0_REFCLKOUT1
+INFO: [Route 35-467] Router swapped GT pin vx1_phy/VID_8K_OR_4K_120.vx1_phy/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[7].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/gthe4_common_gen.GTHE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTHE4_COMMON_X0Y7/COM0_REFCLKOUT3
+Phase 9 Depositing Routes | Checksum: 1468882c5
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:02:09 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 1468882c5
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:02:09 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.493  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 1468882c5
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:02:12 . Memory (MB): peak = 5426.305 ; gain = 88.805
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:02:12 . Memory (MB): peak = 5426.305 ; gain = 88.805
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+215 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:30 ; elapsed = 00:02:16 . Memory (MB): peak = 5426.305 ; gain = 88.805
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 5426.305 ; gain = 0.000
+report_design_analysis: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 5426.305 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/board_top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 5426.305 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file board_top_drc_routed.rpt -pb board_top_drc_routed.pb -rpx board_top_drc_routed.rpx
+Command: report_drc -file board_top_drc_routed.rpt -pb board_top_drc_routed.pb -rpx board_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/board_top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 5426.305 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file board_top_methodology_drc_routed.rpt -pb board_top_methodology_drc_routed.pb -rpx board_top_methodology_drc_routed.rpx
+Command: report_methodology -file board_top_methodology_drc_routed.rpt -pb board_top_methodology_drc_routed.pb -rpx board_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.runs/impl_1/board_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 5426.305 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file board_top_power_routed.rpt -pb board_top_power_summary_routed.pb -rpx board_top_power_routed.rpx
+Command: report_power -file board_top_power_routed.rpt -pb board_top_power_summary_routed.pb -rpx board_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+227 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 5426.305 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file board_top_route_status.rpt -pb board_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file board_top_timing_summary_routed.rpt -pb board_top_timing_summary_routed.pb -rpx board_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file board_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file board_top_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 5453.133 ; gain = 10.320
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file board_top_bus_skew_routed.rpt -pb board_top_bus_skew_routed.pb -rpx board_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Memdata 28-167] Found XPM memory block pll_spi/si5386_2nd/spi_fifo/spi_fifo_i/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the pll_spi/si5386_2nd/spi_fifo/spi_fifo_i/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block pll_spi/si5386_1st/spi_fifo/spi_fifo_i/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the pll_spi/si5386_1st/spi_fifo/spi_fifo_i/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+Command: write_bitstream -force board_top.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xcku11p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku11p'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A2*A3)+(A2*(~A3)*(~A1))+((~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A2*A3)+(A2*(~A3)*(~A1))+((~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC RTSTAT-10] No routable loads: 537 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], vx1_link/vx1_tx_align_buff/buff[3].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], vx1_link/vx1_rx_align_buff/buff[13].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], vx1_link/vx1_tx_align_buff/buff[22].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], vx1_link/vx1_rx_align_buff/buff[31].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], vx1_link/vx1_tx_align_buff/buff[31].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], vx1_link/vx1_rx_align_buff/buff[0].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], vx1_link/vx1_tx_align_buff/buff[0].rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0]... and (the first 15 of 279 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 4 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Generating merged BMM file for the design top 'board_top'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: C:/Users/oem/Desktop/VXONE_V01_4K_120/VXONE_V01.srcs/sources_1/imports/Debug/mb_0.elf 
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 113290592 bits.
+Writing bitstream ./board_top.bit...
+Writing bitstream ./board_top.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:28 ; elapsed = 00:01:03 . Memory (MB): peak = 5959.867 ; gain = 506.734
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 27 15:39:26 2023...

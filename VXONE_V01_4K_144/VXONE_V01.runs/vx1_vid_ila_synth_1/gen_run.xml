@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="vx1_vid_ila_synth_1" LaunchPart="xcku11p-ffve1517-1-i" LaunchTime="1698711255">
+  <File Type="PA-TCL" Name="vx1_vid_ila.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="vx1_vid_ila_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="vx1_vid_ila_reports.tcl"/>
+  <File Type="RDS-RDS" Name="vx1_vid_ila.vds"/>
+  <File Type="RDS-UTIL" Name="vx1_vid_ila_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="vx1_vid_ila_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="vx1_vid_ila.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="vx1_vid_ila_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="vx1_vid_ila_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vx1_vid_ila">
+    <File Path="$PSRCDIR/sources_1/ip/vx1_vid_ila/vx1_vid_ila.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../VXONE_V01.srcs/sources_1/ip/vx1_vid_ila/vx1_vid_ila.xci"/>
+        <Attr Name="ImportTime" Val="1697165110"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/vx1_vid_ila.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../VXONE_V01.srcs/sources_1/ip/vx1_vid_ila.xcix"/>
+        <Attr Name="ImportTime" Val="1697327626"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="vx1_vid_ila"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vx1_vid_ila">
+    <File Path="$PSRCDIR/sources_1/ip/vx1_vid_ila/vx1_vid_ila.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../VXONE_V01.srcs/sources_1/ip/vx1_vid_ila/vx1_vid_ila.xci"/>
+        <Attr Name="ImportTime" Val="1697165110"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/vx1_vid_ila.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../VXONE_V01.srcs/sources_1/ip/vx1_vid_ila.xcix"/>
+        <Attr Name="ImportTime" Val="1697327626"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="vx1_vid_ila"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

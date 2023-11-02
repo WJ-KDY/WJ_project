@@ -1,0 +1,8 @@
+
+set_clock_groups -asynchronous -group [get_clocks freerun]
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins CPU_block/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT0]]
+#set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins CPU_block/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0]] -group [get_clocks -of_objects [get_pins {vx1_phy/us_vbone_phy_inst/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[1].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/gthe4_channel_gen.gen_gthe4_channel_inst[3].GTHE4_CHANNEL_PRIM_INST/RXOUTCLK}]]
+#set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins {vx1_phy/us_vbone_phy_inst/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[1].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/gthe4_channel_gen.gen_gthe4_channel_inst[3].GTHE4_CHANNEL_PRIM_INST/TXOUTCLK}]] -group [get_clocks -of_objects [get_pins {vx1_phy/us_vbone_phy_inst/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[1].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/gthe4_channel_gen.gen_gthe4_channel_inst[3].GTHE4_CHANNEL_PRIM_INST/RXOUTCLK}]]
+#set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins CPU_block/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0]] -group [get_clocks -of_objects [get_pins {vx1_phy/us_vbone_phy_inst/inst/gen_gtwizard_gthe4_top.vx1_phy_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[1].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/gthe4_channel_gen.gen_gthe4_channel_inst[3].GTHE4_CHANNEL_PRIM_INST/TXOUTCLK}]]
+
+
